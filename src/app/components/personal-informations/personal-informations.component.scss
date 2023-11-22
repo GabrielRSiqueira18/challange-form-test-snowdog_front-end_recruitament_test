@@ -1,0 +1,103 @@
+@import "../../../variables.scss";
+
+form {
+  width: 100%;
+  padding: 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  > h1 {
+    font-size: 1rem;
+    color: $gray-900;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    right: 20px;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 1520px) {
+      right: 10px;
+
+    }
+
+    span {
+      color: $gray-100;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $gray-900;
+    }
+  }
+
+  > .grid-container {
+    display: grid;
+    grid-template-areas:
+      "firstName lastName"
+      "email email"
+      "country postalCode"
+      "phoneNumber phoneNumber";
+    gap: 1rem;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .first-name {
+      grid-area: firstName;
+    }
+
+    .last-name {
+      grid-area: lastName;
+    }
+
+    .email {
+      grid-area: email;
+    }
+
+    .country {
+      grid-area: country;
+    }
+
+    .postalCode {
+      grid-area: postalCode;
+    }
+
+    .phoneNumber {
+      grid-area: phoneNumber;
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      background-color: $gray-100;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+
+      label {
+        font-size: $text-big-sm;
+        color: $gray-900;
+        font-weight: 600;
+      }
+
+      input {
+        all: unset;
+        color: $gray-900;
+        font-size: $text-sm;
+      }
+
+      select {
+        border: 0;
+      }
+    }
+  }
+
+}

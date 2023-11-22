@@ -1,0 +1,67 @@
+<form #form="ngForm" (ngSubmit)="formSubmit(form)">
+  <h1>
+    <span>1</span>
+    PERSONAL INFORMATION
+  </h1>
+  <div class="grid-container">
+    <div class="first-name">
+      <label for="">First Name</label>
+      <input
+        type="text"
+        placeholder="First Name"
+        name="firstName"
+        ngModel
+      >
+    </div>
+    <div class="last-name">
+      <label for="">Last Name</label>
+      <input
+        type="text"
+        placeholder="Last Name"
+        name="lastName"
+        ngModel
+      >
+    </div>
+    <div class="email">
+      <label for="">Email</label>
+      <input
+        type="text"
+        placeholder="Email"
+        name="email"
+        ngModel
+      >
+    </div>
+    <div class="country">
+      <label for="">Country</label>
+      <select name="countries" ngModel>
+        <option value="">Select Country</option>
+        <option value="Brazil">Brazil</option>
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="Japan">Japan</option>
+        <option value="China">China</option>
+      </select>
+    </div>
+    <div class="postalCode">
+      <label for="">Postal Code</label>
+      <input
+      type="text"
+      placeholder="Postal Code"
+      name="postalCode"
+      ngModel
+    >
+    </div>
+    <div class="phoneNumber">
+      <label for="">Phone Number</label>
+      <input
+      type="text"
+      placeholder="Phone Number"
+      name="phoneNumber"
+      ngModel
+    >
+    </div>
+  </div>
+</form>
+
+
+{{ form.value.firstName }}
