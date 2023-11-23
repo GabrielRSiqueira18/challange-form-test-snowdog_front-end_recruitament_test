@@ -59,10 +59,11 @@
     <div class="phoneNumber">
       <label for="phoneNumber">Phone Number</label>
       <input
-      type="text"
+      type="tel"
       placeholder="Phone Number"
       name="phoneNumber"
       id="phoneNumber"
+      (keydown)="onlyNumber($event)"
       ngModel
     >
     </div>

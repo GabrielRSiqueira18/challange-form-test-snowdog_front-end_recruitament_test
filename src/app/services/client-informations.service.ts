@@ -13,9 +13,9 @@ export class ClientInformationsService {
 
   constructor() {}
 
-  public addClientInformation(newClientPersonalInformations: ClientInformation, newClientPersonalCard: CardInformation) {
+  public addClientInformation(id: string, newClientPersonalInformations: ClientInformation, newClientPersonalCard: CardInformation) {
     const newClient: TotalInformation = {
-      id: "1",
+      id,
       personalInformations: newClientPersonalInformations,
       cardInformations: newClientPersonalCard,
       purchaseDetails: [
