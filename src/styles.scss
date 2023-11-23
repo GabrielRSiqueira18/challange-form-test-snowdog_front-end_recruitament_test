@@ -12,6 +12,14 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   background-color: #75757549;
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+  }
+
+  @media screen and (max-height: 1050px) {
+    height: auto;
+  }
 }
 
 :focus {

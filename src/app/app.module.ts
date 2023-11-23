@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonalInformationsComponent } from './components/personal-informations/personal-informations.component';
 import { FormsModule } from '@angular/forms';
+import { OrderComponent } from './components/order/order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonalInformationsComponent
+    PersonalInformationsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
