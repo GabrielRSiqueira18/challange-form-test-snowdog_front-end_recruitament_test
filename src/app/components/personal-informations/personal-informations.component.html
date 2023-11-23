@@ -5,35 +5,38 @@
   </h1>
   <div class="grid-container-informations">
     <div class="first-name">
-      <label for="">First Name</label>
+      <label for="firstName">First Name</label>
       <input
         type="text"
         placeholder="First Name"
         name="firstName"
+        id="firstName"
         ngModel
       >
 
     </div>
     <div class="last-name">
-      <label for="">Last Name</label>
+      <label for="lastName">Last Name</label>
       <input
         type="text"
         placeholder="Last Name"
         name="lastName"
+        id="lastName"
         ngModel
       >
     </div>
     <div class="email">
-      <label for="">Email</label>
+      <label for="email">Email</label>
       <input
         type="text"
         placeholder="Email"
         name="email"
+        id="email"
         ngModel
       >
     </div>
     <div class="country">
-      <label for="">Country</label>
+      <label>Country</label>
       <select name="countries" ngModel>
         <option value="">Select Country</option>
         <option value="Brazil">Brazil</option>
@@ -44,20 +47,22 @@
       </select>
     </div>
     <div class="postalCode">
-      <label for="">Postal Code</label>
+      <label for="postalCode">Postal Code</label>
       <input
       type="text"
       placeholder="Postal Code"
       name="postalCode"
+      id="postalCode"
       ngModel
     >
     </div>
     <div class="phoneNumber">
-      <label for="">Phone Number</label>
+      <label for="phoneNumber">Phone Number</label>
       <input
       type="text"
       placeholder="Phone Number"
       name="phoneNumber"
+      id="phoneNumber"
       ngModel
     >
     </div>
@@ -70,12 +75,13 @@
   </h1>
   <div class="grid-container-details">
     <div class="card-number">
-      <label for="">Credit Card Number</label>
+      <label for="cardNumber">Credit Card Number</label>
       <div class="flex">
         <input
         type="text"
         placeholder="000-0-00-0000-0000"
         name="cardNumber"
+        id="cardNumber"
         ngModel
       >
       <img src="../../../assets/card-img.svg" alt="">
@@ -83,23 +89,25 @@
     </div>
     <section>
       <div class="security-code">
-        <label for="">Security Code</label>
+        <label for="securityCode">Security Code</label>
         <div class="flex">
           <input
           type="password"
           placeholder="***"
           name="securityCode"
+          id="securityCode"
           ngModel
         >
         <img src="../../../assets/interrogaton.svg" alt="">
         </div>
       </div>
       <div class="expiration-date">
-        <label for="">Expiration Date</label>
+        <label for="expirationDate">Expiration Date</label>
         <input
           type="text"
           placeholder="MM / YY"
           name="expirationDate"
+          id="expirationDate"
           ngModel
         >
       </div>
