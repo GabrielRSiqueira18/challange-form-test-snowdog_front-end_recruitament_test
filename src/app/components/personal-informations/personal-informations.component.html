@@ -3,7 +3,7 @@
     <span>1</span>
     PERSONAL INFORMATION
   </h1>
-  <div class="grid-container">
+  <div class="grid-container-informations">
     <div class="first-name">
       <label for="">First Name</label>
       <input
@@ -62,4 +62,52 @@
     >
     </div>
   </div>
+
+  <h1>
+    <span>2</span>
+    PAYMENTS DETAILS
+    <img src="../../../assets/padlock.svg" alt="">
+  </h1>
+  <div class="grid-container-details">
+    <div class="card-number">
+      <label for="">Credit Card Number</label>
+      <div class="flex">
+        <input
+        type="text"
+        placeholder="000-0-00-0000-0000"
+        name="cardNumber"
+        ngModel
+      >
+      <img src="../../../assets/card-img.svg" alt="">
+      </div>
+    </div>
+    <section>
+      <div class="security-code">
+        <label for="">Security Code</label>
+        <div class="flex">
+          <input
+          type="password"
+          placeholder="***"
+          name="securityCode"
+          ngModel
+        >
+        <img src="../../../assets/interrogaton.svg" alt="">
+        </div>
+      </div>
+      <div class="expiration-date">
+        <label for="">Expiration Date</label>
+        <input
+          type="text"
+          placeholder="MM / YY"
+          name="expirationDate"
+          ngModel
+        >
+      </div>
+    </section>
+  </div>
+
+  <button>
+    <img src="../../../assets/cart.svg" alt="">
+    COMPLETE PURCHASE
+  </button>
 </form>

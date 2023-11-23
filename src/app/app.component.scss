@@ -2,7 +2,15 @@ div {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
 
   display: grid;
   grid-template-columns: 2fr 1fr;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
