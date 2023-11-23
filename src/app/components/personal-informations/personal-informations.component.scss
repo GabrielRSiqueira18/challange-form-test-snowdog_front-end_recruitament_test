@@ -4,7 +4,6 @@ form {
   width: 100%;
   padding: 1rem;
   max-width: 1440px;
-  margin: 0 auto;
 
   > h1 {
     font-size: 1rem;
@@ -92,6 +91,7 @@ form {
         all: unset;
         color: $gray-900;
         font-size: $text-sm;
+
       }
 
       select {
